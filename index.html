@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Learn</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- chống copy -->
+  <style>
+        body{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        }
+        </style>
+        <script type=”text/JavaScript”>
+        function killCopy(e){
+        return false
+        }
+        function reEnable(){
+        return true
+        }
+        document.onselectstart = new Function ("return false")
+        if (window.sidebar){
+        document.onmousedown=killCopy
+        document.onclick=reEnable
+        }
+        </script>
+        
+        <script type="text/JavaScript"> 
+            window.oncontextmenu =function(event){ event.preventDefault(); event.stopPropagation(); return false; }; 
+            var msg="dembuon.vn"; 
+            function disableIE() {if (document.all) {alert(msg);return false;} } 
+            function disableNS(e) { if (document.layers||(document.getElementById&amp;&amp;!document.all)) { 
+            if (e.which==2||e.which==3) {alert(msg);return false;} } } 
+            if (document.layers) { 
+            document.captureEvents(Event.MOUSEDOWN);document.onmousedown=disableNS; } 
+            else { document.onmouseup=disableNS;document.oncontextmenu=disableIE; } 
+            document.oncontextmenu=new Function("alert(msg);return false") 
+            </script>
+    <!-- end -->
+
+
+</head>
+
+<body>
+<!-- chống copy ảnh -->
+    <script type="text/javascript">
+        function nocontext(e) {
+          var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+          if (clickedTag == "IMG")
+            return false;
+        }
+        document.oncontextmenu = nocontext;
+      </script>
+  
+  <style>
+       img {
+        -webkit-user-drag: none;
+        user-drag: none;
+        -webkit-touch-callout: none;
+      }
+  </style>
+
+    <div id="header">
+        <div class="container">
+            <div id="logo"><a href="">Trung Thong</a></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="https://www.facebook.com/letrung.thong.96/" target="_blank" class="contact">Contact</a></li>
+                    <li><a href="" class="service">Service</a></li>
+                    <li><a href="" class="project">Project</a></li>
+                    <li><a href="" class="home">Home</a></li>
+                    <a href="https://www.facebook.com/letrung.thong.96/" target="_blank" class="cd-top"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <img src="./img/banner2.JPG" alt="">
+    </div>
+    <div id="content">
+        <div class="img">
+            <img src="./img/img-content.jpg" alt"">
+        </div>
+        <div class="about">
+            <ul>
+                <h2>ABOUT ME</h2>
+            </ul>
+            <ul>
+                <p1>Xin chào! Tôi tên là Lê Nguyễn Trung Thông, tôi là sinh viên <br>
+                    năm cuối của trường Cao Đẳng Quốc Tế BTEC thuộc hệ thống<br>
+                    giáo dục đào tạo tập đoàn FPT. Mang trong mình sự nhiệt huyết <br>
+                    của tuổi trẻ và với kiến thức tôi đã học được, tôi hi vọng có thể <br>
+                    góp một phần nhỏ sức lực để phát triển công ty.
+                </p1>
+            </ul>
+            <div class="about1">
+                <li style="padding-top: 15px;">Name</li>
+                <li style="padding-top: 15px;">Age</li>
+                <li style="padding-top: 15px;">Address</li>
+                <li style="padding-top: 15px;">Phone Number</li>
+                <li style="padding-top: 15px;">Email</li>
+            </div>
+            <div class="about2">
+                <li style="padding-top: 15px;">: Lê Nguyễn Trung Thông</li>
+                <li style="padding-top: 15px;">: 20</li>
+                <li style="padding-top: 15px;">: Quảng Nam</li>
+                <li style="padding-top: 15px;">: 0981 729 499</li>
+                <li style="padding-top: 15px;">: letrungthong14042000@gmail.com</li>
+            </div>
+            <div class="download">
+                <ul><a href="./CV.docx">Download CV</a></ul>
+            </div>
+        </div>
+    </div>
+    <div id="contentcv">
+        <div class="conleft">
+            <li>// &nbsp Pro Skill</li>
+            <hr width="250px" , align="center" , color="black" />
+            <img id="html" src="../code learn/img/html-5.png" alt="">
+            <img id="css" src="./img/css-3.png" alt="">
+            <img id="js" src="./img/java-script.png" alt=""> <br>
+            <img id="java" src="./img/java.png" alt="">
+            <img id="wp" src="./img/wordpress.png" alt="">
+            <li style="float: left; padding-top: 40px;">// &nbsp Soft Skill</li>
+            <hr width="250px" , align="center" , color="black" />
+            <div class="softskill">
+                <ul>Creative Thinking</ul>
+                <ul>Team Work </ul>
+                <ul>Problem Solving</ul>
+                <ul>Time Management</ul>
+            </div>
+        </div>
+        <div class="contop">
+            <li style="float: left; padding-top: 30px;">&nbsp Education</li>
+            <hr width="450px" , align="center" , color="black" />
+            <div id="edutop">
+                <ul style="float: left; font-weight: 800;">2015 - 2018</ul>
+                <ul style="float: left; padding-right: 30px; margin-top: 0px; font-family:Calibri;"> Đã từng học tại trường Trung Học Phổ Thông Sào Nam</ul>
+            </div>
+            <div id="edubot">
+                <ul style="float: left; font-weight: 800; margin-top: 0px;">2015 - 2018</ul>
+                <ul style="float: left; padding-right: 30px; margin-top: 0px; font-family: calibri;">Đang theo học tài trường cao Đẳng Quốc Tế BTEC-FPT</ul>
+            </div>
+        </div>
+        <div class="conbot">
+            <li style="float: left; padding-top: 0px;">&nbsp Experience</li>
+            <hr width="450px" , align="center" , color="black" />
+            <ul>Hiện tại vẫn đang là sinh viên và có kinh nghiệm thiết kế và phát triển website trong những dự án nhỏ.
+                Ngoài ra tôi đã có kinh nghiệm trong việc thiết kế cơ sở dữ liệu.
+            </ul>
+            
+        </div>
+    </div>
+</body>
+
+</html>
